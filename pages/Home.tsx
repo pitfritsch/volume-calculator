@@ -12,7 +12,8 @@ import {
   useToast,
 } from "native-base";
 import React, { useEffect, useState } from "react";
-import { StyleSheet } from "react-native";
+import { StyleSheet, Image } from "react-native";
+import Sphere from "../assets/icons/Sphere";
 
 type PossibleShapes = "cube" | "sphere";
 
@@ -42,6 +43,12 @@ function CubeForm() {
 
   return (
     <Box>
+      <Center margin={5}>
+        <Image
+          source={require("../assets/icons/volume-cube.png")}
+          style={{ height: 100, width: 150 }}
+        />
+      </Center>
       <FormControl>
         <FormControl.Label>Length</FormControl.Label>
         <Input value={length} onChangeText={setLength} />
@@ -85,6 +92,12 @@ function SphereForm() {
 
   return (
     <Box>
+      <Center margin={5}>
+        <Image
+          source={require("../assets/icons/PlainSphere.png")}
+          style={{ height: 100, width: 100 }}
+        />
+      </Center>
       <FormControl>
         <FormControl.Label>Radius</FormControl.Label>
         <Input value={radius} onChangeText={setRadius} />

@@ -1,19 +1,19 @@
+import { Entypo } from "@expo/vector-icons";
 import {
   Box,
   Button,
   Center,
   Flex,
   FormControl,
+  Icon,
+  IconButton,
   Input,
   Menu,
-  Select,
-  Switch,
   Text,
   useToast,
 } from "native-base";
 import React, { useEffect, useState } from "react";
-import { StyleSheet, Image } from "react-native";
-import Sphere from "../assets/icons/Sphere";
+import { Image, StyleSheet } from "react-native";
 
 type PossibleShapes = "cube" | "sphere";
 
